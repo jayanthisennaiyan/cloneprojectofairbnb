@@ -1,0 +1,275 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ img.tour,
+ img.image {
+     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+ }
+
+ img:hover {
+     opacity: 0.6;
+ }
+
+ ul,
+ .loginfirsthead,
+ .loginthridhead {
+     display: flex;
+     align-items: center;
+     list-style-type: none;
+ }
+
+ .singlecard {
+     margin: 5px;
+ }
+
+ a {
+     color: black;
+     text-decoration: none;
+ }
+
+ .photo_tour {
+     display: grid;
+     grid-template-rows: 2fr;
+ }
+
+
+ .deskandtab{
+     display: flex;
+     justify-content: space-between;
+ }
+
+
+ .Photo_tour_container h3 {
+     padding: 15px;
+ }
+
+ .sectioncontainer {
+     margin: auto;
+     padding-top: 70px !important;
+ }
+
+ header {
+     width: 100%;
+     margin: auto;
+     border-bottom: 1px solid #d8d8d8;
+     padding: 15px;
+     position: fixed;
+     z-index: 1;
+     background-color: white;
+ }
+
+ li.glob,
+ li.menu {
+
+     padding: 7px;
+ }
+
+ div.contentparent {
+     margin: 25px;
+     display: flex;
+ }
+
+ div.image_parent {
+     display: grid;
+     gap: 10px;
+     grid-template-columns: repeat(3, 1fr);
+     grid-auto-rows: 250px;
+ }
+
+
+ img.image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ #living_room .img_container .image_parent .one {
+     grid-column: 1/4;
+ }
+
+ #living_room .img_container .image_parent .two {
+     grid-column: 1/3;
+ }
+
+ #living_room .img_container .image_parent .five {
+     grid-column: 2/4;
+ }
+
+ #full_kitchen .img_container .image_parent .two {
+     grid-column: 2/4;
+ }
+
+ #full_kitchen .img_container .image_parent .three {
+     grid-column: 1/4;
+ }
+
+ #dinning_area .img_container .image_parent .one {
+     grid-column: 1/3;
+ }
+
+ #betroom_1 .img_container .image_parent .one {
+     grid-row: 1/4;
+ }
+
+ #betroom_1 .img_container .image_parent .two {
+     grid-column: 2/4;
+ }
+
+ #betroom_1 .img_container .image_parent .six {
+     grid-column: 2/4;
+ }
+
+ #betroom_1 .img_container .image_parent .seven {
+     grid-column: 1/3;
+ }
+
+
+
+
+ #betroom_2 .img_container .image_parent .one {
+     grid-row: 1/3;
+ }
+
+ #betroom_2 .img_container .image_parent .two {
+     grid-column: 2/4;
+ }
+
+ #betroom_2 .img_container .image_parent .five {
+     grid-column: 1/4;
+ }
+
+ #betroom_2 .img_container .image_parent .nine {
+     grid-column: 1/3;
+ }
+
+ #betroom_2 .img_container .image_parent .twelve {
+     grid-column: 2/4;
+ }
+
+
+ #full_bathroom_1 .img_container .image_parent .one {
+     grid-row: 1/3;
+ }
+
+ #full_bathroom_1 .img_container .image_parent .four {
+     grid-column: 2/4;
+ }
+
+ #full_bathroom_2 .img_container .image_parent .one {
+     grid-column: 1/3;
+ }
+
+ #exterior .img_container .image_parent .two {
+     grid-column: 2/4;
+ }
+
+ #exterior .img_container .image_parent .three {
+     grid-column: 1/4;
+ }
+
+ #additional_photos .img_container .image_parent .one {
+     grid-column: 1/4;
+ }
+
+
+ .heading {
+     width: 25%;
+     position: sticky;
+     top: 0;
+     background: white;
+     padding: 10px;
+ }
+
+ .heading h3 {
+     font-size: 20px;
+ }
+
+ .img_container {
+     width: 80%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (min-width:1120px) {
+     .sectioncontainer {
+         width: 80%;
+     }
+
+     .photo_tour {
+         grid-template-columns: repeat(7, 1fr);
+     }
+
+     img.tour {
+         height: 110px;
+         width: 160px;
+     }
+
+     div.contentparent {
+         flex-direction: row !important;
+     }
+ }
+
+ @media (min-width:730px) and (max-width:1119px) {
+
+     img.tour {
+         height: 150px;
+         width: 200px;
+     }
+
+     .sectioncontainer {
+         width: 90%;
+     }
+
+     .photo_tour {
+         grid-template-columns: repeat(5, 1fr);
+     }
+
+     div.contentparent {
+         flex-direction: row !important;
+     }
+ }
+
+ @media (max-width:729px) {
+     .sectioncontainer {
+         width: 100%;
+     }
+
+     .photo_tour {
+         grid-template-columns: repeat(10, 1fr);
+         grid-template-rows: 1fr;
+     }
+
+     img.tour {
+         height: 210px !important;
+         width: 210px !important;
+         border-radius: 10px !important;
+     }
+
+
+     div.contentparent {
+         flex-direction: column !important;
+     }
+
+     .heading {
+         width: 100%;
+     }
+
+     .img_container {
+         width: 100%;
+     }
+ }

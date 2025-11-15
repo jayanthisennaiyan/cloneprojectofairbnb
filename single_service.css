@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+}
+
+.singlepagefirsthead,
+.animmenubar,
+.animehead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.singlepagefirsthead {
+    height: 55%;
+    padding: 20px;
+}
+
+
+li {
+    margin: 10px;
+}
+
+.logo {
+    height: 30px;
+    width: 100px;
+}
+
+.animmenubar {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+    width: 500px;
+    padding: 3px 18px;
+    background-color: white;
+}
+
+.glob,
+.menu {
+    background-color: rgb(231, 231, 231);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.animetwo,
+.animeone,
+.searchparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    width: 1px;
+    height: 35px;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.firsthead,
+ul,
+.third {
+    display: flex;
+}
+
+ul li div {
+    perspective: 800px;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+button.search {
+    background-color: #E00B41;
+    border-radius: 50%;
+    padding: 6px;
+    border: 1px #E00B41;
+    margin: 7px;
+}
+
+button.search i.fa-solid.fa-magnifying-glass {
+    color: white;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+}
+
+.mobilesection {
+    display: none !important;
+}
+
+.sectionifo {
+    /* position: relative; */
+    z-index: -1;
+    margin-top: 150px;
+}
+
+.sectionifo {
+    width: 80%;
+    margin: auto;
+    display: flex; 
+}
+
+.leftsection {
+    height: 100vh;
+    width: 40%;
+}
+
+.leftsection div {
+    position: fixed;
+}
+
+.rightsection {
+    width: 60%;
+}
+
+.relativeimagecontainer {
+    position: relative;
+} 
+.relativeimage img { 
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.absoluteimgcontainer {
+    position: absolute;
+}
+
+.absoluteimg {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+
+@media (max-width:746px) {
+    .desktop {
+        display: none !important;
+    }
+
+    header {
+        display: none !important;
+    }
+
+    .mobilesection {
+        display: block !important;
+    }
+
+    .sectionifo {
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+@media (min-width:747px) {
+    .sectionifo {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+
+@media (max-width:1125px) {
+    .sectionifo {
+        width: 90%;
+        margin: auto;
+    }
+
+    .mobileview {
+        display: none;
+    }
+}
